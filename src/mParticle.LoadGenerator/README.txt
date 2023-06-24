@@ -35,3 +35,11 @@ REQUIREMENTS:
 SUBMISSION:
    * We will review your code during one of your interview sessions and talk through design decisions and tradeoffs.
    * For the interview session, please be prepared to share your screen as you discuss your code.
+
+IMPROVEMENTS:
+   * Include a button to discontinue the load generator so Ctrl+C isn't depended on.
+   * Output current and target RPS.
+   * Keep track of which requests passed and failed, including time they passed, total count, argument data, etc.
+   * Have each request each it's own thread rather than a for-loop.
+   * Create a controller class to generate a variety of input to the request.
+   * I haven't worked with C# before so study more of it to provide faster implementation.

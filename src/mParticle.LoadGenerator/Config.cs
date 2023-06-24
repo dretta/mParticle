@@ -67,6 +67,7 @@ namespace mParticle.LoadGenerator
                 Console.WriteLine($"Must specify a nonempty value for {argumentName}.");
                 success = false;
             }
+            PrintArgument(argument, argumentName);
         }
 
         private static void ValidateArgument(uint argument, string argumentName, ref bool success)
@@ -76,6 +77,12 @@ namespace mParticle.LoadGenerator
                 Console.WriteLine($"Must specify a nonzero value for {argumentName}.");
                 success = false;
             }
+            PrintArgument(argument, argumentName);
+        }
+
+        private static void PrintArgument<T>(T argument, string argumentName)
+        {
+            Console.WriteLine("Config '{0}' has value '{1}'", argumentName, argument);    
         }
     }
 
